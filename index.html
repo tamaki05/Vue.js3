@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="js">
+<html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vue.js 3</title>
-    <link rel="stylesheet" href="css/main.css"></link>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js 3</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div id="app">
+  <div id="app">
+    <form v-on:submit.prevent>
         <h2>TODO List</h2>
-        <form>
-            <input type="text">
-            <button>Add</button>
-        </form>
-    </div>
-    <script src="http://unpkg.com/vue@3.1.5"></script>
-    <script src="js/main.js"></script>
+        <input type="text">
+        <button v-on:click="addItem">Add</button>
+    </form> 
+  </div>
+  <script src="https://unpkg.com/vue@3.1.5"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
